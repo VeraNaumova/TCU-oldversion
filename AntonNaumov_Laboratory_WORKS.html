@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Laboratory</title>
+    <link rel="stylesheet" type="text/css" href="AntonNaumov.css" />
+    <script
+      type="text/javascript"
+      src="AntonNaumov_Laboratory_Forms.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="AntonNaumov_Laboratory_Image.js"
+    ></script>
+
+    <style>
+      #myImg {
+        cursor: pointer;
+      }
+
+      #myImg:hover {
+        opacity: 0.7;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(0);
+        }
+        to {
+          -webkit-transform: scale(1);
+        }
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .modal-content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="mainHeader">
+        <table>
+          <tr>
+            <td>
+              <img id="hornedFrog" src="Pictures/Frog1.png" alt="Horned Frog" />
+            </td>
+            <td id="headerText">
+              <span id="departmentHead"
+                >TCU Department of Physics and Astronomy<br /></span
+              ><span id="labHead">Laboratory of Bio-Nanotechnology</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <img
+        id="nanotube"
+        src="Pictures/Nanotube1.png"
+        alt="Nanotube"
+        height="82"
+        style="left: 0px; top: 0px;"
+      />
+
+      <div id="left">
+        <ul class="links">
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="AntonNaumov_CV.html">CV</a></li>
+          <li><a href="AntonNaumov_Laboratory.html">Laboratory</a></li>
+          <li>
+            <a href="AntonNaumov_CurrentProjects.html">Current Projects</a>
+          </li>
+          <li><a href="AntonNaumov_News.html">Recent News of the Group</a></li>
+          <li><a href="AntonNaumov_Members.html">Group Members</a></li>
+        </ul>
+      </div>
+
+      <div id="right">
+        <h2>Laboratory</h2>
+
+        <h4>Lab Capabilities</h4>
+        <img
+          id="myImg"
+          src="Pictures/lab general pic.jpg"
+          alt="Picture of the Lab"
+        />
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div id="caption"></div>
+        </div>
+
+        <ul class="labUl">
+          <li>Fluorescence and absorption spectroscopy in Vis/NIR</li>
+          <li>Spectrally-resolved fluorescence microscopy in Vis/NIR</li>
+          <li>Characterization: SEM, AFM, TEM, FTIR, Raman, TGA</li>
+          <li>Nanomaterials synthesis, separation and dispersion</li>
+          <li>HyperChem molecular modeling</li>
+        </ul>
+
+        <p class="mouseOver">Click to enlarge/minimize images</p>
+
+        <table class="auto-style1">
+          <thead>
+            <tr>
+              <th class="auto-style2">Lab Equipment</th>
+              <th class="auto-style2">Images</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">
+                Scanning Electron Microscope (SEM)
+                <img id="hidden1" src="Pictures/SEM.jpg" alt="SEM" />
+              </td>
+
+              <td class="auto-style12">
+                <div id="1">
+                  <img class="labPics" src="Pictures/SEM.jpg" alt="SEM" />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">
+                Fluorescence Microscope with spectrally-resolved imaging in the
+                visible and near-infrared
+                <img
+                  id="hidden2"
+                  src="Pictures/microscope.jpg"
+                  alt="Microscope"
+                />
+              </td>
+
+              <td class="auto-style12">
+                <div id="2">
+                  <img
+                    class="labPics"
+                    src="Pictures/microscope.jpg"
+                    alt="Microscope"
+                  />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">
+                Spex Nanolog Visible and Near-Infrared Fluorescence Spectrometer
+                <img
+                  id="hidden3"
+                  src="Pictures/spex fluorescence spectrometer.jpg"
+                  alt="Spex Fluorescence Spectrometer"
+                />
+              </td>
+
+              <td class="auto-style12">
+                <div id="3">
+                  <img
+                    class="labPics"
+                    src="Pictures/spex fluorescence spectrometer.jpg"
+                    alt="Spex Fluorescence Spectrometer"
+                  />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">
+                Applied Nanofluorescnece NS-2 Nanospectralyzer Nanotube
+                fluorescence and Vis/Near-IR Absorption Spectrometer
+                <img
+                  id="hidden4"
+                  src="Pictures/nanospectralyzer.jpg"
+                  alt="Nanospectralizer"
+                />
+              </td>
+
+              <td class="auto-style12">
+                <div id="4">
+                  <img
+                    class="labPics"
+                    src="Pictures/nanospectralyzer.jpg"
+                    alt="Nanospectralizer"
+                  />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">
+                Chemical and Biological Laminar Flow Hoods
+                <img
+                  id="hidden5"
+                  src="Pictures/Chemical hood.jpg"
+                  alt="Chemical Hood"
+                />
+              </td>
+
+              <td class="auto-style12">
+                <div id="5">
+                  <img
+                    class="labPics"
+                    src="Pictures/Chemical hood.jpg"
+                    alt="Chemical Hood"
+                  />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">
+                Cell Culture Microscope
+                <img
+                  id="hidden6"
+                  src="Pictures/cell culture microscope.jpg"
+                  alt="Cell Culture Microscope"
+                />
+              </td>
+
+              <td class="auto-style12">
+                <div id="6">
+                  <img
+                    class="labPics"
+                    src="Pictures/cell culture microscope.jpg"
+                    alt="Cell Culture Microscope"
+                  />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">
+                Covaris Cup-Horn Ultrasonicator
+                <img id="hidden7" src="Pictures/covaris.jpg" alt="covaris" />
+              </td>
+
+              <td class="auto-style12">
+                <div id="7">
+                  <img
+                    class="labPics"
+                    src="Pictures/covaris.jpg"
+                    alt="covaris"
+                  />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">
+                Glove Box Workstation
+                <img id="hidden8" src="Pictures/glovebox.jpg" alt="glovebox" />
+              </td>
+
+              <td class="auto-style12">
+                <div id="8">
+                  <img
+                    class="labPics"
+                    src="Pictures/glovebox.jpg"
+                    alt="Glovebox"
+                  />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">Bath and Tip Sonicators</td>
+              <td>
+                <img
+                  class="labPics"
+                  src="Pictures/Placeholder.png"
+                  alt="Placeholder"
+                />
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">Centrifuges</td>
+              <td>
+                <img
+                  class="labPics"
+                  src="Pictures/Placeholder.png"
+                  alt="Placeholder"
+                />
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">
+                Class 4 Diode Lasers: 440 nm, 532 nm, 637 nm, 650 nm 808 nm
+              </td>
+              <td>
+                <img
+                  class="labPics"
+                  src="Pictures/Placeholder.png"
+                  alt="Placeholder"
+                />
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">1064nm ND:Yag Laser</td>
+              <td>
+                <img
+                  class="labPics"
+                  src="Pictures/Placeholder.png"
+                  alt="Placeholder"
+                />
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">CVD Ovens</td>
+              <td>
+                <img
+                  class="labPics"
+                  src="Pictures/Placeholder.png"
+                  alt="Placeholder"
+                />
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td class="auto-style11">Freeze-Dryer</td>
+              <td class="auto-style1"></td>
+              <td>
+                <img
+                  class="labPics"
+                  src="Pictures/Placeholder.png"
+                  alt="Placeholder"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+
+        <h4>Shared Equipment</h4>
+        <ul class="labUl">
+          <li>FTIR Microscope and Spectrometer</li>
+          <li>Atomic Force Microscope</li>
+          <li>Microbalance</li>
+          <li>TGA</li>
+          <li>ICP-OES</li>
+          <li>MicroRaman</li>
+          <li>Incubator Housing 4 Cell Lines: HeLa, MCF-7, HEK-293, HepG2</li>
+        </ul>
+
+        <p>
+          <a href="AntonNaumov_MetricsToScience.html" id="research_highlights"
+            >Research highlghts of the lab.</a
+          >
+        </p>
+      </div>
+      <!--right-->
+    </div>
+    <!--container-->
+
+    <script>
+      var modal = document.getElementById("myModal");
+
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      };
+
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+    </script>
+  </body>
+</html>

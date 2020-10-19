@@ -1,0 +1,279 @@
+﻿/*CSS for AntonNaumov.html*/
+
+body {
+	background-color:#999999;
+}
+
+#container {
+	background-color:white;
+	width: 1000px;
+	margin:5px auto;
+	overflow: auto;
+	border:thin gray solid;
+	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#mainHeader {
+	background: linear-gradient(to top, #22133A 0%,  #4D1979 30%, #9966FF 100%);
+	width:1000px;
+	height:100px;
+}
+
+#hornedFrog {
+	width:110px;
+	height:90px;
+	padding-left:20px;
+	margin-top:5px;
+}
+
+#headerText {
+	text-align:center;
+	width: 783px;
+}
+
+#departmentHead{
+	font-size:20px;
+}
+
+#labHead {
+	color:white;
+	text-align:center;
+	margin:20px;
+	font-size:30px;
+	/*margin-bottom:40px;*/
+			
+}
+
+#nanotube {
+	width:1000px;
+	height:100%;
+	margin-top:0px;
+	position:relative; 
+}
+
+#left {
+	float:left;
+	width:250px;
+	margin:5px auto;	
+	margin-top:26px;
+	padding:5px;
+	/*border:thin gray solid;*/
+}
+		
+#right {
+	float:left;
+	width:700px;
+	margin:5px;
+	/*border:thin gray solid;*/
+}
+		
+.links {
+	list-style-type:none;
+	font-size:17px;	
+
+}
+
+.links li a {
+	display:block;
+	color:white;
+	width:150px;
+	margin:10px;
+	padding:20px;
+	margin-bottom:5px;
+	text-align:center;
+	text-decoration:none;
+	background: linear-gradient(to top, #22133A 0%,  #4D1979 30%, #9966FF 100%);
+}
+
+
+.links li a:hover {
+	background: linear-gradient(to top, #1A0033 0%, #4D1979 100%);
+}
+
+h2 {
+	padding:0px;
+	margin:0px;
+}
+
+p {
+	text-indent: 20px;
+	text-align:justify;
+}
+
+#address {
+	text-align:center;
+	text-indent:0;
+	margin-top:85px;
+}
+
+#ANaumovPort {
+	float:left;
+	width:258.75px;
+	height:387.09px;
+	display:inline;
+	margin-right:10px;
+}
+
+span {
+	font-weight:bold;
+}
+
+.bottomPic {
+	width:70%;
+	height:70%;
+	padding-top:5px;	
+	padding-right:35px;
+	float:right;
+}
+
+caption {
+	font-weight:bold;
+	font-size: 130%;
+}
+
+.labPics {
+	display:block;
+	margin:auto;
+	width: auto;
+	height:30px;
+}
+
+/*#8:focus {
+	cursor: pointer;*/
+}
+
+.auto-style1 {
+	border: grey;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+}
+
+.auto-style2 {
+	border: grey;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+}
+
+.auto-style11 {
+	border: grey;
+	border-style: solid;
+	border-width: 1px;
+	border-left-width: 1px;
+	width: 943px;
+	
+}
+.auto-style12 {
+	border: grey;
+	border-style: solid;
+	border-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+}
+
+.labUl {
+	line-height: 200%;
+}
+
+h4 {
+	margin-left:240px;
+}
+
+#myImg {
+	float:right;
+	width:auto;
+	height:140px;
+	margin: auto;
+}
+
+#picDescription {
+	float:right;	
+}
+
+form {
+	margin-bottom:40px;
+}
+
+p a {
+	color:#4D1979;
+}
+p a:hover {
+	color:green;
+}
+
+.projectPics {
+	float:right;
+	height:120px;
+	width:auto;
+	margin-left:10px;
+}
+
+.projectPics1 {
+	float:right;
+	height:150px;
+	width:auto;
+	margin-left:10px;
+}
+
+.projectsStyle {
+	margin-bottom: 90px;
+}
+
+.newsPic {
+	display:block;
+	height:200px;
+	margin:auto;
+}
+
+.mouseOver {
+	color:gray;
+	text-align:right;
+	margin-right:55px;
+}
+
+/*#smallBigPics {
+	float:left;
+	display:inline;
+	margin:auto;*/
+
+}
+
+#smallPics {
+	display:block;
+	margin:auto;
+	padding-left:10px;
+}
+
+#largePic {
+	display:block;
+	margin:auto;
+	height:300px;
+	width:auto;
+}
+
+#largePic1 {
+	display:block;
+	margin:auto;
+	height:300px;
+	width:auto;
+	margin-bottom:20px;
+}
+
+#hidden1, #hidden2, #hidden3, #hidden4, #hidden5, #hidden6, #hidden7, #hidden8 {
+	height: 300px;
+	width:auto;
+	margin: auto;
+	display:block;
+	padding:10px;
+	display:none;
+}
+
+{
+	cursor: pointer;
+}
+
+#research_highlights, research_highlights:visited {
+	text-decoration: none;
+	color: black;
+}
